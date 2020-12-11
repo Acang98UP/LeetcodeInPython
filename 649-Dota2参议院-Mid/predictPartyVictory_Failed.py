@@ -15,8 +15,6 @@ def predictPartyVictory(senate: str) -> str:
         while len(R_List) != 0 and len(D_List) != 0:  # 如果有人，进行人员数量动态检测
             for x in splited_str:
                 if x == 'R':
-                    if D_Index >= len(D_List):
-                        D_Index = 0
                     splited_str.pop(D_List[D_Index])
                     D_List.pop(D_Index)
                     if R_Index < len(R_List):
@@ -24,8 +22,6 @@ def predictPartyVictory(senate: str) -> str:
                     else :
                         R_Index = 0
                 elif x == 'D':
-                    if R_Index >= len(R_List):
-                        R_Index = 0
                     splited_str.pop(R_List[R_Index])
                     R_List.pop(R_Index)
                     if D_Index < len(D_List):
