@@ -1,4 +1,16 @@
 def findTheDifference(s: str, t:str) ->str:
+
+    """
+    ##比较两个字符的差集,统计每个字符中字符的个数
+        countS = collections.Counter(s)
+        countT = collections.Counter(t)
+        # print(countS,countT)
+        for val in countT:
+            # print(val)
+            if countT[val] != countS[val]:
+                return val
+    """
+
     if len(s) == 0:
         return t
     t = list(t)
