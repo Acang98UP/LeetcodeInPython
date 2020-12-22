@@ -1,12 +1,13 @@
 from typing import List
+from binarytree import tree
 
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
-def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
+def zigzagLevelOrder(self, root: tree) -> List[List[int]]:
     if not root:
         return []
     res = []
