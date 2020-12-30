@@ -1,15 +1,17 @@
 def modifyString(s: str) -> str:
-    if s == '':
-        return ''
-    if len(s) == 1:
-        if s == '?':
-            return 'a'
-    left, point, right = 0, 1, 2
-    if right > len(s) - 1:
-        right = point
-    while point < len(s):
-        if s[point] == '?':
-            pass
+    s1 = 'abcdefghijklmnopqrstuvwxyz'
+    result = list('0' + s + '0')
+    i = 1
+    while i < len(result) - 1:
+        if result[i] == '?':
+            j = 0
+            while j < len(s1):
+                if s1[j] not in [result[i - 1], result[i + 1]]:
+                    result[i] = s1[j]
+                    break
+                j += 1
+        i += 1
+    return ''.join(result[1:-1])
 
 
 def main():
