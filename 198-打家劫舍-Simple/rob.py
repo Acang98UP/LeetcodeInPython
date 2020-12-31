@@ -10,5 +10,6 @@ def main():
     nums = [1, 2, 3, 1]
     print(rob(nums))
 
+
 if __name__ == '__main__':
     main()
