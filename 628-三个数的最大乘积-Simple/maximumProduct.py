@@ -11,7 +11,8 @@ def maximumProduct(nums: List[int]) -> int:
 
 
 def main():
-    nums = [-100,-98,-1,2,3,4]
+    nums = [-100, -98, -1, 2, 3, 4]
+    # nums = [0, 1, 2, 3]
     print(maximumProduct(nums))
 
 
