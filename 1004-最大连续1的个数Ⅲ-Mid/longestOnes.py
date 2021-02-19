@@ -2,6 +2,7 @@ from typing import List
 
 
 def longestOnes(A: List[int], K: int) -> int:
+    # 滑动窗口
     N = len(A)
     res = 0
     left, right = 0, 0
