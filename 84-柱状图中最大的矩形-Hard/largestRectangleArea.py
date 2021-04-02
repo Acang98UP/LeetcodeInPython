@@ -12,9 +12,11 @@ def largestRectangleArea(heights: List[int]) -> int:
         stack.append(i)
     return result
 
+
 def main():
     heights = [2, 1, 5, 6, 2, 3]
     print(largestRectangleArea(heights))
+
 
 if __name__ == '__main__':
     main()
